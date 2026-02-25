@@ -1,86 +1,135 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تطبيق اللهم ارحم أبي</title>
 
   <style>
     body {
       font-family: "Noto Kufi Arabic", sans-serif;
-      background:#063F1D;
-      color:#FCEECB;
-      text-align:center;
-      padding:0 20px;
-      line-height:1.8;
+      background: #063F1D;
+      color: #FCEECB;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 1.8;
     }
-    h1 { font-size:38px; margin-top:40px; }
-    h2 { font-size:28px; margin-top:30px; }
-    p { font-size:20px; margin-top:18px; }
+
+    header {
+      padding: 30px 20px;
+    }
+    header img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+    h2 {
+      font-size: 26px;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 18px;
+      opacity: 0.95;
+      margin: 0 15px;
+    }
+
+    .play-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #0B542E;
+      padding: 14px 28px;
+      color: white;
+      font-size: 20px;
+      border-radius: 14px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .play-btn:hover {
+      background: #0E7045;
+    }
+
+    .features {
+      padding: 0 25px;
+      text-align: right;
+      max-width: 600px;
+      margin: auto;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      background: rgba(255,255,255,0.1);
+      margin-bottom: 12px;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
     .screenshots img {
-      width:280px;
-      border-radius:16px;
-      margin:12px;
-      border: 2px solid #0E7045;
+      width: 270px;
+      border-radius: 14px;
+      margin: 10px;
+      border: 2px solid rgba(255,255,255,0.15);
     }
-    .btn-download {
-      display:inline-block;
-      margin-top:25px;
-      background:#0B542E;
-      padding:15px 28px;
-      border-radius:12px;
-      text-decoration:none;
-      font-size:22px;
-      color:white;
-    }
+
     footer {
-      margin-top:40px;
-      font-size:16px;
-      opacity:0.8;
+      margin-top: 50px;
+      padding: 25px;
+      background: rgba(255,255,255,0.05);
+      color: #EEE;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-<h1>تطبيق "اللهم ارحم أبي"</h1>
-<p>أدعية مختارة لوالدك، مصنّفة وعشوائية، مع مشاركة سهلة وتصميم جميل.</p>
+<header>
+  <img src="logo.png" alt="Logo">
+  <h1>تطبيق "اللهم ارحم أبي"</h1>
+  <p>أدعية مختارة لوالدك، مصنّفة وعشوائية، مع مشاركة سهلة وتصميم جميل.</p>
+
+  <!-- Bouton Google Play à activer après publication -->
+  <a class="play-btn" href="#">
+    تحميل التطبيق من متجر Google Play
+  </a>
+</header>
 
 <h2>المميزات</h2>
-<p>
-• أدعية موثوقة ومصنّفة<br>
-• دعاء عشوائي بضغطة واحدة<br>
-• مشاركة عبر واتساب<br>
-• المفضّلة<br>
-• الوضع الداكن<br>
-• بدون إعلانات
-</p>
+<div class="features">
+  <ul>
+    <li>أدعية مختارة بعناية لوالدك رحمه الله</li>
+   ية عبر واتساب بسهولة</li>
+    <li>المفضّلة لسهولة الوصول</li>
+    <li>واجهة داكنة وفاتحة</li>
+    <li>بدون إعلانات</li>
+  </ul>
+</div>
 
 <h2>صور التطبيق</h2>
 <div class="screenshots">
-  <img src="mockup_home.jpeg" alt="Home">
-  <img src="mockup_favorites.jpeg" alt="Favorites">
-  <img src="mockup_settings.jpeg" alt="Settings">
+  mockup_home.png
+  mockup_favorites.png
+  mockup_settings.png
 </div>
-
-<h2>تحميل التطبيق</h2>
-<p>سيتم إضافة رابط متجر Play هنا بعد النشر</p>
 
 <h2>سياسة الخصوصية</h2>
 <p>
-<a href="privacy_ar.html" style="color:#FCEECB; text-decoration:underline;">
-اضغط هنا لقراءة سياسة الخصوصية
-</a>
-</p>
-
-<h2>المطوّر</h2>
-<p>
-Rahma App<br>
-contact.rahmaapps@gmail.com
+  <a href="privacy_ar.html" style="color:#B8F3C2; font-size:18px;">
+    اضغط هنا لقراءة سياسة الخصوصية
+  </a>
 </p>
 
 <footer>
-© 2026 – rahmaapps
+  <p>© 2026 – تطبيق اللهم ارحم أبي</p>
+  <p>تم التطوير بواسطة Hamza Joumane</p>
 </footer>
 
 </body>
